@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.3e3fcf5e.js",
-    "static/js/787.17e5bff6.chunk.js": "/static/js/787.17e5bff6.chunk.js",
-    "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.3e3fcf5e.js.map": "/static/js/main.3e3fcf5e.js.map",
-    "787.17e5bff6.chunk.js.map": "/static/js/787.17e5bff6.chunk.js.map"
+    "main.css": "/tbrundige.github.io/static/css/main.073c9b0a.css",
+    "main.js": "/tbrundige.github.io/static/js/main.15941f39.js",
+    "static/js/787.17e5bff6.chunk.js": "/tbrundige.github.io/static/js/787.17e5bff6.chunk.js",
+    "index.html": "/tbrundige.github.io/index.html",
+    "main.073c9b0a.css.map": "/tbrundige.github.io/static/css/main.073c9b0a.css.map",
+    "main.15941f39.js.map": "/tbrundige.github.io/static/js/main.15941f39.js.map",
+    "787.17e5bff6.chunk.js.map": "/tbrundige.github.io/static/js/787.17e5bff6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.3e3fcf5e.js"
+    "static/js/main.15941f39.js"
   ]
 }
