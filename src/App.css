@@ -1,38 +1,462 @@
-.App {
+html {
+  --imp-text-color: #639090;
+
+  font-size: 12px;
+}
+
+.accent-color {
+  color: var(--imp-text-color);
+}
+
+button:focus {
+  box-shadow: none !important;
+  
+}
+
+/* Navbar */
+.sticky {
+  background-color: #fafafaa9;
+  transition: all 0.3s ease-out 0s;
+  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171);
+  backdrop-filter: blur(10px);
+}
+
+.navbar {
+  position: fixed;
+  transition: all 0.3s ease-out 0s;
+  padding: 0.3rem 2rem;
+  font-size: 1.5rem;
+}
+
+.navbar-toggler {
+  position: relative;
+  background-color: transparent;
+  border-color: transparent !important;
+}
+
+.navbar-toggler span {
+  display: block;
+  background-color: #555555;
+  height: 4px;
+  width: 27px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  transform: rotate(0deg);
+  left: 0;
+  opacity: 1;
+
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: 0;
+}
+
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+  transition: transform 0.35s ease-in-out;
+  transition: transform 0.35s ease-in-out;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  transform: rotate(135deg);
+  opacity: 0.9;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  height: 12px;
+  visibility: hidden;
+  background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  transform: rotate(-135deg);
+  opacity: 0.9;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    background-color: #ffffff;
+  }
+  .navbar-nav .nav-item a::after {
+    display: none ;
+  }
+}
+.navbar-brand {
+  color: #3d3d3d;
+}
+
+.logo {
+  max-height: 3rem;
+  /* width: 4rem; */
+}
+
+.navbar-nav .nav-link {
+  color: #3d3d3d;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.nav-link {
+  padding: 0.8rem 1rem;
+}
+
+@media (max-width: 767px) {
+  .nav-link {
+    padding: 0.7rem 1rem;
+  }
+}
+
+.navbar-nav .nav-item {
+  position: relative;
+  margin-left: 20px;
+}
+
+.navbar-nav .nav-item a {
+  font-weight: 400;
+  transition: all 0.3s ease-out 0s;
+  position: relative;
+  z-index: 1;
+}
+
+/* Underline animation accent */
+.navbar-nav .nav-item a::after {
+  content: "";
+  position: relative;
+  display: block;
+  height: 5px;
+  width: 0;
+  border-radius: 16px;
+  background: #639090;
+  bottom: 1px;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease-out 0s;
+}
+
+.navbar-nav .nav-item a:hover::after {
+  width: 100%;
+}
+
+/* Home */
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.1s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.home-header {
+  padding-top: 80px;
+}
+
+.home-section {
+  position: relative;
+  z-index: -1;
+  background-color: #ffffff;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.home-content {
+  padding: 9rem 0 2rem;
+  color: #3d3d3d;
+  text-align: left;
+}
+
+.heading {
+  font-size: 2.4em;
+  padding-left: 50px;
+}
+
+.heading-name {
+  font-size: 2.5em;
+  padding-left: 45px;
+}
+
+.main-name {
+  color: #639090;
+}
+
+.Typewriter__wrapper {
+  font-size: 2.2em;
+  color: #639090;
+  font-weight: 600;
+}
+.Typewriter__cursor {
+  font-size: 2.4em;
+  color: #3d3d3d;
+}
+
+@media (max-width: 767px) {
+  .Typewriter__wrapper {
+    font-size: 1.4em;
+    font-weight: 500;
+    position: absolute;
+  }
+  .Typewriter__cursor {
+    display: none;
+  }
+}
+
+.secondary-photo {
+  justify-content: center;
+  padding-top: 9em;
+}
+
+@media (max-width: 767px) {
+  .secondary-photo{
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+}
+
+/* Home About */
+.home-about-section {
+  position: relative;
+  padding-bottom: 70px;
+  padding-top: 70px;
+  background-color: #f8f8f8;
+}
+
+.home-about-description {
+  color: #3d3d3d;
+  padding-top: 100px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-about-body {
+  padding-top: 50px;
+  font-size: 1.2em;
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home-about-social {
+  text-align: center;
+  padding-top: 25px;
+  color: #3d3d3d;
+  font-size: 1.25em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.home-about-social-links {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 15px;
+  display: inline-block;
+  position: relative;
+  padding-inline-start: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.home-social-icons {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 2em;
+  background: #ffffff;
+  border-radius: 50%;
+  transition: 0.5s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.home-social-icons::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ffffff;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
+}
+
+.home-social-icons:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #3d3d3d;
+}
+
+.home-social-icons:hover {
+  color: #3d3d3d;
+  box-shadow: 0 0 5px #639090;
+  text-shadow: 0 0 2px #639090;
+}
+
+.social-icons {
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.icon-colour {
+  color: #3d3d3d;
+}
+
+/* Footer */
+.footer {
+  background-color: #ffffff;
+  bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 8px ;
+}
+
+.footer-copywright {
+  text-align: center;
+}
+
+.footer-body {
+  z-index: 1;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .footer-copywright {
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .footer-body {
+    text-align: center;
   }
+}
+
+.footer h3 {
+  font-size: 1em;
+  color: #3d3d3d;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.footer-icons {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0;
+}
+
+.blockquote-footer {
+  color: #3d3d3d;
+}
+
+/* Projects */
+.project-section {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
+
+.project-card {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.project-card-view {
+  color: #3d3d3d;
+  background-color: #fafafa;
+  opacity: 0.9;
+  transition: all 0.5s ease 0s;
+  height: 100%;
+}
+
+.project-card-view:hover {
+  transform: scale(1.02);
+  overflow: hidden;
+  box-shadow: #000000c4;
+}
+
+.card-img-top {
+  padding: 20px;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #639090 !important;
+  border-color: #639090;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #639090;
+  border-color: #639090;
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.project-heading {
+  color: #3d3d3d;
+  font-size: 2.3em;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+/* Skills */
+.tech-icons {
+  font-size: 2em;
+  margin: .5rem;
+  /* padding: 10px; */
+  opacity: 0.93;
+  border: 1.7px solid #696969ab;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 5px;
+  display: table;
+  overflow: hidden;
+  transition: all 0.4s ease 0s;
+}
+
+@media (max-width: 767px) {
+  .tech-icons {
+    margin: 10px;
+  }
+}
+
+.tech-icons:hover {
+  transform: scale(1.05);
+  overflow: hidden;
+  border: 2.2px solid #639090c4;
 }
