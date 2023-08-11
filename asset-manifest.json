@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.3e3fcf5e.js",
+    "main.css": "/static/css/main.271a3af2.css",
+    "main.js": "/static/js/main.8bfb89a2.js",
     "static/js/787.17e5bff6.chunk.js": "/static/js/787.17e5bff6.chunk.js",
+    "static/media/blob-propic.png": "/static/media/blob-propic.a271e23489228824f26b.png",
+    "static/media/bike-image.png": "/static/media/bike-image.59fe464570088174ccfb.png",
+    "static/media/project-placeholder.png": "/static/media/project-placeholder.d8f982dc083b83c2762c.png",
+    "static/media/tb-logo.png": "/static/media/tb-logo.284bae4f54c7f837c716.png",
     "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.3e3fcf5e.js.map": "/static/js/main.3e3fcf5e.js.map",
+    "main.271a3af2.css.map": "/static/css/main.271a3af2.css.map",
+    "main.8bfb89a2.js.map": "/static/js/main.8bfb89a2.js.map",
     "787.17e5bff6.chunk.js.map": "/static/js/787.17e5bff6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.3e3fcf5e.js"
+    "static/css/main.271a3af2.css",
+    "static/js/main.8bfb89a2.js"
   ]
 }
