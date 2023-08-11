@@ -32,15 +32,6 @@ export default function About() {
               Currently learning how to handle streaming data using{" "}
               <b className="accent-color"> Kafka </b> and{" "}
               <b className="accent-color"> Python</b>. &nbsp;
-              <br />
-              <br />I build frontends using{" "}
-              <i>
-                <b className="accent-color">Node.js</b>
-              </i>{" "}
-              and
-              <i>
-                <b className="accent-color"> React</b>
-              </i>
             </p>
           </Col>
           <Col md={4} className="secondary-photo">
