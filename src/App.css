@@ -415,7 +415,7 @@ button:focus {
 .btn-primary {
   color: #fff;
   background-color: #639090 !important;
-  border-color: #639090;
+  border-color: #639090 !important;
 }
 
 .btn-primary:hover {
