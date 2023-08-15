@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
@@ -17,6 +18,7 @@ export default function App() {
     <Router>
       <div className="App">
         <Navbar />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Projects />} />
