@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.7bef0dc4.css",
-    "main.js": "/static/js/main.dd172709.js",
+    "main.css": "/static/css/main.fb2a9826.css",
+    "main.js": "/static/js/main.0a5c79cf.js",
     "static/js/787.17e5bff6.chunk.js": "/static/js/787.17e5bff6.chunk.js",
+    "static/media/nasa-apod.png": "/static/media/nasa-apod.cef0373220bf86dfbded.png",
     "static/media/blob-propic.png": "/static/media/blob-propic.a271e23489228824f26b.png",
     "static/media/zions-ntl-park.jpg": "/static/media/zions-ntl-park.11a5b9a81c0de6433094.jpg",
     "static/media/project-placeholder.png": "/static/media/project-placeholder.d8f982dc083b83c2762c.png",
     "static/media/tb-logo.png": "/static/media/tb-logo.284bae4f54c7f837c716.png",
     "index.html": "/index.html",
-    "main.7bef0dc4.css.map": "/static/css/main.7bef0dc4.css.map",
-    "main.dd172709.js.map": "/static/js/main.dd172709.js.map",
+    "main.fb2a9826.css.map": "/static/css/main.fb2a9826.css.map",
+    "main.0a5c79cf.js.map": "/static/js/main.0a5c79cf.js.map",
     "787.17e5bff6.chunk.js.map": "/static/js/787.17e5bff6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7bef0dc4.css",
-    "static/js/main.dd172709.js"
+    "static/css/main.fb2a9826.css",
+    "static/js/main.0a5c79cf.js"
   ]
 }
