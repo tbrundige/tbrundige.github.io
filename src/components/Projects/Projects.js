@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import projectPlaceholder from "../../Assets/Projects/project-placeholder.png";
+import nasaapod from "../../Assets/Projects/nasa-apod.png";
 
 function Projects() {
   return (
@@ -11,15 +12,16 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={projectPlaceholder}
-              title="Project One"
-              description="Project One Description"
-              ghLink="https://github.com/tbrundige"
-              demoLink="https://github.com/tbrundige"
+              imgPath={nasaapod}
+              title="NASA Astronomy Picture of the Day CLI"
+              description="A CLI app that brings some beauty to the terminal.
+              This App gets the current NASA APOD (Astronomy Picture of the Day),
+              converts it to ASCII art and displays the results."
+              ghLink="https://github.com/tbrundige/node-nasa-apod-cli"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={projectPlaceholder}
               title="Project Two"
@@ -68,7 +70,7 @@ function Projects() {
               ghLink="https://github.com/tbrundige"
             //   demoLink="https://github.com/tbrundige"
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>
