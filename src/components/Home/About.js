@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import bikeImage from "../../Assets/bike-image.png";
+import zionImage from "../../Assets/zions-ntl-park.jpg";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn, FaSalesforce } from "react-icons/fa";
 
@@ -36,7 +36,7 @@ export default function About() {
           </Col>
           <Col md={4} className="secondary-photo">
             <img
-              src={bikeImage}
+              src={zionImage}
               alt="bike"
               className="img-fluid"
               style={{ maxHeight: "450px" }}
