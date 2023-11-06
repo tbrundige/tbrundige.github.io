@@ -6,7 +6,7 @@ import Projects from "./components/Projects/Projects";
 import Teetools from "./components/Projects/Teetools";
 import Footer from "./components/Footer";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
   Navigate,
