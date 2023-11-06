@@ -1,8 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import projectPlaceholder from "../../Assets/Projects/project-placeholder.png";
+// import projectPlaceholder from "../../Assets/Projects/project-placeholder.png";
 import nasaapod from "../../Assets/Projects/nasa-apod.png";
+import teetoolsplugin from "../../Assets/Projects/teetools-plugin.png";
 
 function Projects() {
   return (
@@ -21,17 +22,17 @@ function Projects() {
             />
           </Col>
 
-          {/* <Col md={4} className="project-card">
+          <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={projectPlaceholder}
-              title="Project Two"
-              description="Project Two Description"
-              ghLink="https://github.com/tbrundige"
-              demoLink="https://github.com/tbrundige"
+              imgPath={teetoolsplugin}
+              title="teetools-plugin"
+              description="A sf cli plugin that contains a collection of tools some people may find useful.
+              Displaying information about an org to calcualting the fillrate of a field."
+              demoLink="/projects/teetools-plugin"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={projectPlaceholder}
               isBlog={false}

@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
+import Teetools from "./components/Projects/Teetools";
 import Footer from "./components/Footer";
 import {
   BrowserRouter as Router,
@@ -21,7 +22,8 @@ export default function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/teetools-plugin" element={<Teetools />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
