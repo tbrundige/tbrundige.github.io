@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.fb2a9826.css",
+    "main.css": "/static/css/main.a64f9aa0.css",
     "main.js": "/static/js/main.556f63a7.js",
     "static/js/787.17e5bff6.chunk.js": "/static/js/787.17e5bff6.chunk.js",
     "static/media/nasa-apod.png": "/static/media/nasa-apod.cef0373220bf86dfbded.png",
@@ -12,12 +12,12 @@
     "static/media/teetools-plugin.png": "/static/media/teetools-plugin.b03227fc255d6ea4547c.png",
     "static/media/tb-logo.png": "/static/media/tb-logo.284bae4f54c7f837c716.png",
     "index.html": "/index.html",
-    "main.fb2a9826.css.map": "/static/css/main.fb2a9826.css.map",
+    "main.a64f9aa0.css.map": "/static/css/main.a64f9aa0.css.map",
     "main.556f63a7.js.map": "/static/js/main.556f63a7.js.map",
     "787.17e5bff6.chunk.js.map": "/static/js/787.17e5bff6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb2a9826.css",
+    "static/css/main.a64f9aa0.css",
     "static/js/main.556f63a7.js"
   ]
 }
