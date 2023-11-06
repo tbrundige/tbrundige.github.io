@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
@@ -21,16 +22,17 @@ function ProjectCards(props) {
         {"\n"}
         {"\n"}
 
-        {props.demoLink && (
+        {props.demoLink && (<Link to={props.demoLink}>
           <Button
             variant="primary"
-            href={props.demoLink}
+            // href={props.demoLink}
             // target="_blank"
             style={{ marginLeft: "10px" }}
           >
             <CgWebsite /> &nbsp;
             {"More Info"}
           </Button>
+          </Link>
         )}
       </Card.Body>
     </Card>
