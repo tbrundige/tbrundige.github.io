@@ -3,6 +3,7 @@ import { Container, Row, Col, ListGroup } from "react-bootstrap";
 import ogiDemo from "../../Assets/Projects/ogi.gif";
 import dafFieldDemo from "../../Assets/Projects/daf-field.gif";
 import dafSobjectDemo from "../../Assets/Projects/daf-sobject.gif";
+import sfApexGenereateFromJson from "../../Assets/Projects/sfapegeneratefromjson.gif"
 
 function Teetools() {
     const orgDisplayInfoUsage = 'sf org display info -o <value> [--json] [-a <value>]';
@@ -10,6 +11,8 @@ function Teetools() {
     const dataAnalyzeFillrateUsage = 'sf data analyze fillrate -o <value> -s <value> [--json] [-a <value>] [-f <value>]'
     const dataAnalyzeFillrateExampleOne = 'sf data analyze fillrate -o testorg -s Account -f Id'
     const dataAnalyzeFillrateExampleTwo = 'sf data analyze fillrate -o testorg -s Account'
+    const apexGenerateFromJsonExample = 'sf apex convert fromJSON -j .\\Example.json -p . -f'
+    const apexGenerateFromJsonUsage = 'sf apex convert fromJSON -j <value> -p <value> [--json] [-a <value>] [-n <value>] [-f]'
 
   return (
     <Container fluid className="project-section">
@@ -46,6 +49,12 @@ function Teetools() {
             <Col md={8}>
                 <h3>Available commands</h3>
                 <ListGroup>
+                    <ListGroup.Item><h4>apex generate fromJSON</h4><hr></hr>
+                    <p>Converts JSON to Apex Class.</p>
+                    <p>Usage: <code>{apexGenerateFromJsonUsage}</code></p>
+                    <p>Example: <code>{apexGenerateFromJsonExample}</code></p>
+                    <img src={sfApexGenereateFromJson} className='img-fluid shadow-4' alt="demo of ogi command"></img>
+                    </ListGroup.Item>
                     <ListGroup.Item><h4>org display info</h4><hr></hr>
                     <p>Displays information about an org to aid in understanding its size and complexity</p>
                     <p>Usage: <code>{orgDisplayInfoUsage}</code></p>
